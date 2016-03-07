@@ -1,7 +1,135 @@
-### HEAD
+### 8.4.2: February 19th, 2016
+* Add Composer vendor directory to gitignore ([#1618](https://github.com/roots/sage/issues/1618))
+* Fix build test by removing trailing space ([#1617](https://github.com/roots/sage/issues/1617))
+* Replace deprecated gulp-minify-css with gulp-cssnano ([#1610](https://github.com/roots/sage/issues/1610))
+
+### 8.4.1: January 27th, 2016
+* Add `composer.json` and update installation instructions ([#1583](https://github.com/roots/sage/issues/1583))
+
+### 8.4.0: December 1st, 2015
+* Update to Bootstrap 3.3.6 ([#1578](https://github.com/roots/sage/pull/1578))
+* Remove unnecessary underscore ([#1577](https://github.com/roots/sage/pull/1577))
+* Drop support for older browsers ([#1571](https://github.com/roots/sage/pull/1571))
+* Add support for theme customizer ([#1573](https://github.com/roots/sage/pull/1573))
+* Remove extraneous no-js ([#1562](https://github.com/roots/sage/pull/1562))
+* Simplify/speed up editor style process ([#1560](https://github.com/roots/sage/pull/1560))
+
+### 8.3.0: October 13th, 2015
+* Setup organization ([#1558](https://github.com/roots/sage/pull/1558))
+* Remove redundancy with WAI-ARIA in HTML ([#1557](https://github.com/roots/sage/pull/1557))
+* Rename config.php to setup.php ([#1556](https://github.com/roots/sage/pull/1556))
+* Move init.php to config.php ([#1555](https://github.com/roots/sage/pull/1555))
+* Use Sass to style search form, remove search template ([#1545](https://github.com/roots/sage/pull/1545))
+* Remove Modernizr ([#1541](https://github.com/roots/sage/pull/1541))
+* Remove references to WP_ENV ([#1554](https://github.com/roots/sage/pull/1554))
+* Use WP core's HTML5 gallery markup ([#1546](https://github.com/roots/sage/pull/1546))
+* Use slash in handle names for theme CSS and JS ([#1537](https://github.com/roots/sage/pull/1537))
+* Add compatibility with WooCommerce Multilingual plugin ([#1530](https://github.com/roots/sage/pull/1530))
+* Remove ConditionalTagCheck class ([#1494](https://github.com/roots/sage/pull/1494))
+* Add search templates ([#1459](https://github.com/roots/sage/issues/1459))
+* Allow `debugger` statements in development JavaScript ([#1487](https://github.com/roots/sage/issues/1487))
+
+### 8.2.1: May 7th, 2015
+* Update BrowserSync ([#1457](https://github.com/roots/sage/issues/1457))
+* Bump dependencies ([#1448](https://github.com/roots/sage/issues/1448))
+* Allow revved files to resolve in development if they exist ([#1456](https://github.com/roots/sage/issues/1456))
+* Disable advanced minification features to fix incorrect file path in compiled CSS ([#1452](https://github.com/roots/sage/issues/1452))
+* Fix Glyphicon font path ([#1455](https://github.com/roots/sage/issues/1455))
+
+### 8.2.0: April 29th, 2015
+* Use Sass Bootstrap by default ([#1437](https://github.com/roots/sage/issues/1437))
+* Remove nav walker and Bootstrap navbar ([#1427](https://github.com/roots/sage/issues/1427))
+* Remove Bootstrap gallery ([#1421](https://github.com/roots/sage/issues/1421))
+* Remove hardcoded feed link ([#1426](https://github.com/roots/sage/issues/1426))
+* Move jQuery CDN feature to Soil ([#1422](https://github.com/roots/sage/issues/1422))
+* Bump `gulp-load-plugins` to 0.10.0 ([#1419](https://github.com/roots/sage/issues/1419))
+* Switch from [yargs](https://github.com/bcoe/yargs) to [minimist](https://github.com/substack/minimist) ([#1418](https://github.com/roots/sage/issues/1418))
+* Remove `$content_width` ([#1417](https://github.com/roots/sage/issues/1417))
+* Lowercase `X-UA-Compatible` ([#1409](https://github.com/roots/sage/issues/1409))
+* Remove mention of Google Analytics from the config ([#1384](https://github.com/roots/sage/issues/1384))
+
+### 8.1.1: March 31st, 2015
+* Remove pleeease dependency in favor of vanilla gulp-autoprefixer and gulp-minify-css ([#1402](https://github.com/roots/sage/issues/1402))
+* Fix `gulp --production` race condition ([#1398](https://github.com/roots/sage/issues/1398))
+* Update to Bootstrap 3.3.4 ([#1387](https://github.com/roots/sage/issues/1387))
+
+### 8.1.0: March 13th, 2015
+* Move HTML5 Boilerplate's Google Analytics snippet to Soil ([#1382](https://github.com/roots/sage/issues/1382))
+* Run `gulp build` if `bower.json` is changed ([#1378](https://github.com/roots/sage/issues/1378))
+* Remove namespace from base.php ([#1372](https://github.com/roots/sage/issues/1372))
+* Allow build directory to be customized ([#1352](https://github.com/roots/sage/issues/1352), [#1366](https://github.com/roots/sage/issues/1366))
+* Update ConditionalTagCheck and usage docs ([#1365](https://github.com/roots/sage/issues/1365))
+* Change default gallery columns to 3 ([#1364](https://github.com/roots/sage/issues/1364))
+* Apply `script_loader_src` filter to jQuery fallback ([#1363](https://github.com/roots/sage/issues/1363))
+
+### 8.0.1: February 26th, 2015
+* Update asset-builder version to fix Windows compatibility ([#1351](https://github.com/roots/sage/issues/1351))
+* Fix broken wiredep imports with main.scss.example ([Discussion](https://discourse.roots.io/t/issue-with-sage-sass-version/2962))
+
+### 8.0.0: February 25th, 2015
+* Change theme name from Roots to Sage
+* Bump required PHP version to >=5.4
+* Add coding standards based on PSR-2
+* Add Travis CI
+* Add namespace
+* Use short array syntax
+* Use short echo syntax
+* Switch from Grunt to gulp, new front-end development workflow
+* Switch from Livereload to [BrowserSync](http://www.browsersync.io/)
+* Use wiredep for Sass and Less injection
+* Implement JSON file based asset pipeline with [asset-builder](https://github.com/austinpray/asset-builder)
+* Re-organize asset file structure
+* Re-organize stylesheet file structure
+* Add main.scss.example and instructions for using Sass
+* Use the primary theme stylesheet for the editor stylesheet
+* Remove theme activation, move to [wp-cli-theme-activation](https://github.com/roots/wp-cli-theme-activation)
+* Simplify 404 page
+* Convert Sidebar to ConditionalTagCheck
+* Update to jQuery 1.11.2
+* Use new core navigation template tag
+* Update sidebar to fix default template check
+* Update nav walker to correctly assign `active` classes for custom post types
+* Better support for CPT templates
+
+### 7.0.3: December 18th, 2014
+* Use `get_the_archive_title`
+* Remove `wp_title`, add title-tag theme support
+* Remove `Roots_Nav_Walker` as default for all menus
+* Update to Bootstrap 3.3.1
+* Add some base comment styling
+* Make search term `required` in search form
+
+### 7.0.2: October 24th, 2014
+* Simplify comments, use core comment form and list
+* Remove HTML5 shiv from Modernizr build
+* Move JavaScript to footer
+* Update hEntry schema to use `updated` instead of `published`
+* Move variables into `main.less`
+* Add `roots_body_class` function that checks for page slug in `body_class`
+* Move `wp_footer` from footer template into `base.php`
+
+### 7.0.1: August 15th, 2014
+* Move `<main>` and `.sidebar` markup out of PHP and into LESS
+* Define `WP_ENV` if it is not already defined
+* Only load Google Analytics in production environment
+
+### 7.0.0: July 3rd, 2014
+* Updated Grunt workflow
+* Use grunt-modernizr to make a lean Modernizr build
+* Use Bower for front-end package management
+* Update to Bootstrap 3.2.0
+* Update to Modernizr 2.8.2
+* Update to jQuery 1.11.1
+* Move clean up, relative URLs, and nice search to [Soil](https://github.com/roots/soil)
+* Update LESS organization
+* Move [community translations](https://github.com/roots/roots-translations) to separate repository
+
+### 6.5.2: February 4th, 2014
+* Update to Bootstrap 3.1.0
+* Move DOM routing into an anonymous function to support jQuery noConflict
+* Update to jQuery 1.11.0
 * Add notice to theme activation, tidy activation table markup
 * Remove changing media folder from theme activation (use [Bedrock](https://github.com/roots/bedrock) for clean URLs out of the box)
-* Update to Bootstrap 3.0.3
 * Switch `div.main` to `main` element now that Modernizr uses the latest HTML5 Shiv
 * Update to Modernizr 2.7.0
 * Don't run JSHint on plugins (`assets/js/plugins/`)
